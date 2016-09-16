@@ -29,9 +29,9 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/b3log/wide/conf"
-	"github.com/b3log/wide/i18n"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/conf"
+	"github.com/bketelsen/wide/i18n"
+	"github.com/bketelsen/wide/util"
 )
 
 const (
@@ -458,7 +458,7 @@ func main() {
 	port := getPort()
 
 	// you may need to change the address
-	fmt.Println("Open http://wide.b3log.org:" + port + " in your browser to see the result") 
+	fmt.Println("Open http://wide.bketelsen.org:" + port + " in your browser to see the result") 
 
 	if err := http.ListenAndServe(":"+port, nil); nil != err {
 		fmt.Println(err)

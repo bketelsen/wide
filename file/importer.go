@@ -21,7 +21,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/util"
 )
 
 type fileInfo struct {

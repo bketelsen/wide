@@ -27,9 +27,9 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/b3log/wide/event"
-	"github.com/b3log/wide/log"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/event"
+	"github.com/bketelsen/wide/log"
+	"github.com/bketelsen/wide/util"
 )
 
 const (

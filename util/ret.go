@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/b3log/wide/log"
+	"github.com/bketelsen/wide/log"
 )
 
 // Logger.

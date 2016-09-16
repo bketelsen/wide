@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2016, b3log.org & hacpai.com
+// Copyright (c) 2014-2016, bketelsen.org & hacpai.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/b3log/wide/conf"
-	"github.com/b3log/wide/session"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/conf"
+	"github.com/bketelsen/wide/session"
+	"github.com/bketelsen/wide/util"
 )
 
 // GoFmtHandler handles request of formatting Go source code.

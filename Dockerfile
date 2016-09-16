@@ -1,10 +1,10 @@
 FROM golang:cross
 MAINTAINER Liang Ding <dl88250@gmail.com>
 
-ADD . /wide/gogogo/src/github.com/b3log/wide
+ADD . /wide/gogogo/src/github.com/bketelsen/wide
 
-RUN tar zxf /wide/gogogo/src/github.com/b3log/wide/deps/golang.org.tar.gz -C /wide/gogogo/src/
-RUN tar zxf /wide/gogogo/src/github.com/b3log/wide/deps/github.com.tar.gz -C /wide/gogogo/src/
+RUN tar zxf /wide/gogogo/src/github.com/bketelsen/wide/deps/golang.org.tar.gz -C /wide/gogogo/src/
+RUN tar zxf /wide/gogogo/src/github.com/bketelsen/wide/deps/github.com.tar.gz -C /wide/gogogo/src/
 
 RUN useradd wide && useradd runner
 
@@ -17,7 +17,7 @@ RUN go build github.com/gorilla/websocket
 
 RUN go install github.com/visualfc/gotools github.com/nsf/gocode github.com/bradfitz/goimports
 
-WORKDIR /wide/gogogo/src/github.com/b3log/wide
+WORKDIR /wide/gogogo/src/github.com/bketelsen/wide
 RUN go build -v
 
 EXPOSE 7070

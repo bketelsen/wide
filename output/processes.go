@@ -18,7 +18,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/b3log/wide/session"
+	"github.com/bketelsen/wide/session"
 )
 
 // Type of process set.

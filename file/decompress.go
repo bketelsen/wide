@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/util"
 )
 
 // DecompressHandler handles request of decompressing zip/tar.gz.

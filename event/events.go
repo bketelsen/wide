@@ -18,8 +18,8 @@ package event
 import (
 	"os"
 
-	"github.com/b3log/wide/log"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/log"
+	"github.com/bketelsen/wide/util"
 )
 
 const (

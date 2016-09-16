@@ -27,11 +27,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/b3log/wide/conf"
-	"github.com/b3log/wide/file"
-	"github.com/b3log/wide/log"
-	"github.com/b3log/wide/session"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/conf"
+	"github.com/bketelsen/wide/file"
+	"github.com/bketelsen/wide/log"
+	"github.com/bketelsen/wide/session"
+	"github.com/bketelsen/wide/util"
 	"github.com/gorilla/websocket"
 )
 

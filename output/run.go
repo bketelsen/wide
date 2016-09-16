@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/b3log/wide/conf"
-	"github.com/b3log/wide/session"
-	"github.com/b3log/wide/util"
+	"github.com/bketelsen/wide/conf"
+	"github.com/bketelsen/wide/session"
+	"github.com/bketelsen/wide/util"
 )
 
 const (

@@ -20,7 +20,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/b3log/wide/log"
+	"github.com/bketelsen/wide/log"
 )
 
 // Logger.

@@ -5,10 +5,10 @@
     "homepage": "https://wide.b3log.org",
     "repository": {
         "type": "git",
-        "url": "git://github.com/b3log/wide.git"
+        "url": "git://github.com/bketelsen/wide.git"
     },
     "bugs": {
-        "url": "https://github.com/b3log/wide/issues"
+        "url": "https://github.com/bketelsen/wide/issues"
     },
     "license": "Apache License",
     "private": true,
