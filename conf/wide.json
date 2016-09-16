@@ -5,7 +5,7 @@
     "Server": "{IP}:{Port}",
     "StaticServer": "",
     "LogLevel": "debug",
-    "Channel": "ws://{IP}:{Port}",
+    "Channel": "wss://{IP}:{Port}",
     "HTTPSessionMaxAge": 86400,
     "StaticResourceVersion": "${time}",
     "MaxProcs": 4,
