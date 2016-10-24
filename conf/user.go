@@ -19,7 +19,6 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -82,7 +81,6 @@ type editor struct {
 
 // NewUser creates a user with the specified username, password, email and workspace.
 func NewUser(username, password, email, workspace string) *User {
-	fmt.Println(username, password, email, workspace)
 	md5hash := md5.New()
 	md5hash.Write([]byte(email))
 	gravatar := hex.EncodeToString(md5hash.Sum(nil))

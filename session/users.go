@@ -374,9 +374,10 @@ func addUser(username, password, email string) string {
 		}
 	}
 
-	firstUserWorkspace := conf.GetUserWorkspace(conf.Users[0].Name)
-	dir := filepath.Dir(firstUserWorkspace)
-	workspace := filepath.Join(dir, username)
+	//firstUserWorkspace := conf.GetUserWorkspace(conf.Users[0].Name)
+	//dir := filepath.Dir(firstUserWorkspace)
+
+	workspace := filepath.Join("/", "envy", "users", username, "home")
 
 	newUser := conf.NewUser(username, password, email, workspace)
 	conf.Users = append(conf.Users, newUser)

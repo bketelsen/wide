@@ -48,7 +48,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 		return
 	}
-
+	logger.Trace("max age:", conf.Wide.HTTPSessionMaxAge)
 	httpSession.Options.MaxAge = conf.Wide.HTTPSessionMaxAge
 	if "" != conf.Wide.Context {
 		httpSession.Options.Path = conf.Wide.Context

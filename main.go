@@ -158,8 +158,8 @@ func main() {
 	http.HandleFunc(conf.Wide.Context+"/find/usages", handlerWrapper(editor.FindUsagesHandler))
 
 	// shell
-	// http.HandleFunc(conf.Wide.Context+"/shell/ws", handlerWrapper(shell.WSHandler))
-	// http.HandleFunc(conf.Wide.Context+"/shell", handlerWrapper(shell.IndexHandler))
+	//http.HandleFunc(conf.Wide.Context+"/shell/ws", handlerWrapper(shell.WSHandler))
+	//http.HandleFunc(conf.Wide.Context+"/shell", handlerWrapper(shell.IndexHandler))
 
 	// notification
 	http.HandleFunc(conf.Wide.Context+"/notification/ws", handlerWrapper(notification.WSHandler))

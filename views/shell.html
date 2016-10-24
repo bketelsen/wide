@@ -21,10 +21,8 @@
 
         <script type="text/javascript">
             var config = {
-            channel: {
-            shell: '{{.conf.ShellChannel}}'
-            },
-                    wideSessionId: {{.sid}}
+            "channel": '{{.conf.Channel}}',
+            "wideSessionId": '{{.sid}}'
             };</script>
         <script type="text/javascript" src="{{.conf.StaticServer}}/static/js/lib/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="{{.conf.StaticServer}}/static/js/lib/reconnecting-websocket.js"></script>

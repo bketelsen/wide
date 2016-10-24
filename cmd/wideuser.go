@@ -13,6 +13,7 @@ func main() {
 	username := flag.String("u", "", "username")
 	password := flag.String("p", "", "password")
 	email := flag.String("e", "", "email")
+	home := flag.String("h", "", "home")
 	flag.Parse()
 
 	_, err := os.Stat("conf/wide.json")
@@ -21,13 +22,11 @@ func main() {
 		os.Exit(-1)
 	}
 
-	if *username == "" || *password == "" || *email == "" {
+	if *username == "" || *password == "" || *email == "" || *home == "" {
 		os.Exit(-1)
 	}
 
-	dir := os.Getenv("GOPATH")
-
-	newUser := conf.NewUser(*username, *password, *email, dir)
+	newUser := conf.NewUser(*username, *password, *email, *home)
 	if newUser != nil {
 		if success := newUser.Save(); !success {
 			os.Exit(-1)
